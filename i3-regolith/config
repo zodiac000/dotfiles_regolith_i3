@@ -2,7 +2,7 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+set $mod Mod1
 
 set $base03    #002b36
 set $base02    #073642
@@ -39,7 +39,7 @@ floating_modifier $mod
 hide_edge_borders smart
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -158,8 +158,8 @@ new_window pixel 5
 new_float pixel 3
 
 # Gaps (i3-gaps)
-gaps inner 10 
-gaps outer 30
+gaps inner 30 
+gaps outer 10
 
 smart_gaps on
 
@@ -182,7 +182,7 @@ bar {
   font pango:Ubuntu Mono Regular 13
   separator_symbol " "
   status_command i3blocks
-  tray_output HDMI-0
+  tray_output DP-2
 
   colors {
       background $base03
@@ -208,7 +208,7 @@ exec --no-startup-id /usr/bin/unclutter -b
 bindsym F11 exec "pulsemixer --change-volume -10"  
 bindsym F12 exec "pulsemixer --change-volume +10"  
 
-exec_always --no-startup-id "feh --bg-scale ~/Pictures/wow.jpg"
+exec_always --no-startup-id "feh --bg-scale ~/Pictures/linux.jpg"
 exec_always --no-startup-id "nm-applet"
 #exec_always --no-startup-id "xset r rate 200 100"
 #exec_always --no-startup-id "setxkbmap -option ctrl:nocaps"
